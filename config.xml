@@ -7,10 +7,10 @@
         versionCode = "1" 
         version = "1.0.0">
 
-    <name>Monitoreo de recorrido - La Condamine</name>
+    <name>Formulario WEB</name>
 
     <description>
-       Sistema de Gestión de Recorridos para Instituciones. by Geocommerce Cia. Ltda. Quito, Ecuador - 2015
+       Formulario WEB
     </description>
 
     <author href="http://www.geocommerce.com.ec" email="geo@geocommerce.com.ec">
