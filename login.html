@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+<link rel="stylesheet" href="assets/css/jquery.mobile-1.3.2.min.css" />
+<link rel="stylesheet" href="assets/css/app.css" /> 
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="assets/js/jquery.mobile-1.3.2.min.js"></script>
+<script src="assets/js/jquery.price_format.js"></script>
+<script src="assets/js/jquery.price_format.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<link href='https://fonts.googleapis.com/css?family=Syncopate:700' rel='stylesheet' type='text/css'> 
+
+<script type='text/javascript' src='assets/js/jquery.marquee.min.js'></script>
+
+    
+<script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js'></script>
+
+
+
+<style>
+
+#codigo {
+    font-weight: normal;
+    font-size:17px;
+    color: black;
+    font-family: 'Syncopate', sans-serif;
+    /*background-color: #FFE83C;*/
+}
+
+#app_name {
+    font-weight: bold;
+    font-size:18px !important;
+    color: black;
+    font-family: 'Syncopate', sans-serif;
+    /*background-color: #FFE83C;*/
+}
+
+#login-form > div.ui-btn.ui-shadow.ui-btn-corner-all.ui-btn-icon-right.ui-btn-up-e > span > span.ui-btn-text {
+    font-weight: bold;
+    font-size:17px !important;
+    color: black;
+    font-family: 'Syncopate', sans-serif;
+    /*background-color: #FFE83C;*/
+}
+
+#username {
+    font-weight: normal;
+    font-size:20px !important;
+    color: black;
+}
+
+#service-addr {
+    font-weight: normal;
+    font-size:20px !important;
+    color: black;
+}
+
+
+/*table, th, td {
+    border: 1px solid black;
+    }*/
+
+
+</style>
+
+<script language="JavaScript">
+
+function formulario(){
+window.location.assign("http://form.jotformz.com/form/52694051411651");
+}
+
+</script>
+</head>
+<body>
+<div data-role="popup" id="popupBasic"></div>
+<div id="audio-wrap">
+	
+    <audio id="pito" src="assets/audio/pito.mp3" type="audio/mpeg"  autobuffer controls></audio>
+    
+    <!--<audio id="click" src="assets/audio/click.mp3"  type="audio/mpeg"  autobuffer controls></audio>-->
+
+	<!--
+	<audio id="alerta" src="assets/audio/alerta.mp3" type="audio/mpeg"  autobuffer controls></audio>
+    
+    <audio id="pito" src="assets/audio/pito.mp3" type="audio/mpeg"  autobuffer controls></audio>
+	<audio id="yes"  src="assets/audio/yes.mp3"  type="audio/mpeg"  autobuffer controls></audio>
+	<audio id="not"  src="assets/audio/not.mp3"  type="audio/mpeg"  autobuffer controls></audio>
+	-->
+</div>
+
+
+
+<!-- Login -->
+<div data-role="page" id="login-page">
+    <div data-theme="e" data-role="header">
+        <h3>
+            <label id="app_name" name ="app_name" width='100%'>Formulario</label>
+        </h3>
+    </div>
+    <div data-role="content">
+
+        <form id="login-form" action="" method="POST">
+
+            <div data-role="fieldcontain">
+                <label id="codigo" for="username">
+                    Codigo Vendedor
+                </label>
+                <input name="username" id="username" placeholder="" value="" type="text">
+            </div>
+            <div data-role="fieldcontain">
+                <label id="codigo" for="password">
+                    Clave
+                </label>
+                <input name="password" id="password" placeholder="" value="" type="password">
+            </div>
+            <a href="#dashboard" data-role="button" id="show-dashboard" style="display: none;">Show page "two"</a>
+            <input type="button" data-theme="e" data-icon="arrow-r" data-iconpos="right"
+            value="Ingresar" id="do-login" onclick="formulario()">
+        </form>
+
+    </div>
+    <div style=" text-align:center">
+           <img id="app_icon" style="width: 96px; height: 96px" src="logo.png">
+    </div>
+    <div data-theme="e" data-role="footer" data-position="fixed">
+        <!-- Mensajes -->
+        <h3>
+			<label id="copyright" name ="copyright">My Company</label>
+        </h3>
+    </div>
+</div>
+<!-- EndLogin -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
